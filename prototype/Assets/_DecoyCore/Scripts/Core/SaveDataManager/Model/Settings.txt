@@ -1,0 +1,41 @@
+<Settings>
+	<Graphics>
+		<Resolution>1920, 1080</Resolution>
+		<AspectRatio>16, 9</AspectRatio>
+		<Fullscreen>False</Fullscreen>
+		<Vsync>False</Vsync>
+		<RefreshRate>60</RefreshRate>
+		<Preset>0</Preset>
+		<TextureQuality>0</TextureQuality>
+		<ShadowQuality>0</ShadowQuality>
+		<AntiAliasing>0</AntiAliasing>
+		<AnisotropicFiltering>1</AnisotropicFiltering>
+		<FieldOfView>70</FieldOfView>
+	</Graphics>
+	<Audio>
+		<MusicVolume>0.5</MusicVolume>
+		<SoundEffectVolume>0.5</SoundEffectVolume>
+	</Audio>
+	<Gameplay>
+		<MouseSensitivity>0.5</MouseSensitivity>
+		<MouseYInverted>False</MouseYInverted>
+		<ControllerSensitivity>0.5</ControllerSensitivity>
+		<ControllerYInverted>False</ControllerYInverted>
+		<ToggleCrouch>False</ToggleCrouch>
+		<MouseSmoothing>False</MouseSmoothing>
+	</Gameplay>
+	<Keybindings>
+		<InteractionKeyKeyboard>E</InteractionKeyKeyboard>
+		<CrouchKeyKeyboard>C</CrouchKeyKeyboard>
+		<JumpKeyKeyboard>Space</JumpKeyKeyboard>
+		<SprintKeyKeyboard>LeftShift</SprintKeyKeyboard>
+		<InteractionKeyController>Joystick1Button0</InteractionKeyController>
+		<CrouchKeyController>Joystick1Button1</CrouchKeyController>
+		<JumpKeyController>Joystick1Button3</JumpKeyController>
+		<SprintKeyController>Joystick1Button8</SprintKeyController>
+	</Keybindings>
+	<GameSettings>
+		<SaveGameVersion>0.1</SaveGameVersion>
+		<FirstRun>True</FirstRun>
+	</GameSettings>
+</Settings>

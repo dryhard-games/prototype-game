@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55bcc1bed244301409dc984dec2eb565, type: 3}
+  m_Name: DefaultGameDataModel
+  m_EditorClassIdentifier: 
+  fullscreen: 0
+  vSync: 0
+  anisotropicFiltering: 1
+  preset: 3
+  textureQuality: 2
+  shadowQuality: 2
+  AA: 0
+  FOV: 75
+  aspectRatio: 16, 9
+  musicVolume: 0.5
+  sfxVolume: 0.5
+  mouseSensitivity: 0.5
+  controllerSensitivity: 2.5
+  mouseYInverted: 0
+  controllerYInverted: 0
+  mouseSmoothing: 0
+  toggleCrouch: 0

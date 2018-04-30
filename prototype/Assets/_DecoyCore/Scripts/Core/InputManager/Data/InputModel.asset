@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef5046c40216764d9b5f4961a0bc30e, type: 3}
+  m_Name: InputModel
+  m_EditorClassIdentifier: 
+  gamepadActive: 0
+  horizontalLookAxisRaw: 0
+  verticalLookAxisRaw: 0
+  horizontalLookAxis: 0
+  verticalLookAxis: 0
+  horizontalMovementAxisRaw: 0
+  verticalMovementAxisRaw: 0
+  horizontalMovementAxis: 0
+  verticalMovementAxis: 0
+  sprintButtonUp: 0
+  crouchButtonUp: 0
+  jumpButtonUp: 0
+  sprintButtonDown: 0
+  crouchButtonDown: 0
+  jumpButtonDown: 0
+  sprintButtonHold: 0
+  crouchButtonHold: 0
+  jumpButtonHold: 0
+  anyButtonDown: 0
+  detectInput: 1
