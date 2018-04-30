@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 198db383f60d44e439d5bd76a6e414d5, type: 3}
+  m_Name: Xbox 360 Gamepad Model
+  m_EditorClassIdentifier: 
+  controllerName: Xbox 360 Controller
+  joystickGUID: d74a350e-fe8b-4e9e-bbcd-efff16d34115
+  gamepadGlyphModel:
+  - buttonName: Left Stick X
+    elementIdentifierId: 0
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: Left Stick Y
+    elementIdentifierId: 1
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: Right Stick X
+    elementIdentifierId: 2
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: Right Stick Y
+    elementIdentifierId: 3
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: Left Trigger
+    elementIdentifierId: 4
+    glyph: {fileID: 21300000, guid: 14e3b4b3cf45f4e7a92c7bb563888968, type: 3}
+    glyphPos: {fileID: 21300000, guid: 14e3b4b3cf45f4e7a92c7bb563888968, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 14e3b4b3cf45f4e7a92c7bb563888968, type: 3}
+  - buttonName: Right Trigger
+    elementIdentifierId: 5
+    glyph: {fileID: 21300000, guid: 569fda3024c424d319a807867502983d, type: 3}
+    glyphPos: {fileID: 21300000, guid: 569fda3024c424d319a807867502983d, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 569fda3024c424d319a807867502983d, type: 3}
+  - buttonName: A
+    elementIdentifierId: 6
+    glyph: {fileID: 21300000, guid: 56e829fe1e56c4310ba872dd43b902d0, type: 3}
+    glyphPos: {fileID: 21300000, guid: 56e829fe1e56c4310ba872dd43b902d0, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 56e829fe1e56c4310ba872dd43b902d0, type: 3}
+  - buttonName: B
+    elementIdentifierId: 7
+    glyph: {fileID: 21300000, guid: b3a0935786c9d48e5b770e910ec4d1fb, type: 3}
+    glyphPos: {fileID: 21300000, guid: b3a0935786c9d48e5b770e910ec4d1fb, type: 3}
+    glyphNeg: {fileID: 21300000, guid: b3a0935786c9d48e5b770e910ec4d1fb, type: 3}
+  - buttonName: X
+    elementIdentifierId: 8
+    glyph: {fileID: 21300000, guid: e9ae7edbbb6db47e997b825ab68e29ed, type: 3}
+    glyphPos: {fileID: 21300000, guid: e9ae7edbbb6db47e997b825ab68e29ed, type: 3}
+    glyphNeg: {fileID: 21300000, guid: e9ae7edbbb6db47e997b825ab68e29ed, type: 3}
+  - buttonName: Y
+    elementIdentifierId: 9
+    glyph: {fileID: 21300000, guid: 96cb028562df94e4184f2d305c91f069, type: 3}
+    glyphPos: {fileID: 21300000, guid: 96cb028562df94e4184f2d305c91f069, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 96cb028562df94e4184f2d305c91f069, type: 3}
+  - buttonName: Left Shoulder
+    elementIdentifierId: 10
+    glyph: {fileID: 21300000, guid: 32992531eef7d46fa973ebfe822729d8, type: 3}
+    glyphPos: {fileID: 21300000, guid: 32992531eef7d46fa973ebfe822729d8, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 32992531eef7d46fa973ebfe822729d8, type: 3}
+  - buttonName: Right Shoulder
+    elementIdentifierId: 11
+    glyph: {fileID: 21300000, guid: f41e1d2edb56e40c689794e1aaa92c81, type: 3}
+    glyphPos: {fileID: 21300000, guid: f41e1d2edb56e40c689794e1aaa92c81, type: 3}
+    glyphNeg: {fileID: 21300000, guid: f41e1d2edb56e40c689794e1aaa92c81, type: 3}
+  - buttonName: View
+    elementIdentifierId: 12
+    glyph: {fileID: 21300000, guid: 2335ad4b2d0454c6f8774efeab5cbc34, type: 3}
+    glyphPos: {fileID: 21300000, guid: 2335ad4b2d0454c6f8774efeab5cbc34, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 2335ad4b2d0454c6f8774efeab5cbc34, type: 3}
+  - buttonName: Menu
+    elementIdentifierId: 13
+    glyph: {fileID: 21300000, guid: bd627e39baadd41909af562e91c15eb2, type: 3}
+    glyphPos: {fileID: 21300000, guid: bd627e39baadd41909af562e91c15eb2, type: 3}
+    glyphNeg: {fileID: 21300000, guid: bd627e39baadd41909af562e91c15eb2, type: 3}
+  - buttonName: Left Stick Button
+    elementIdentifierId: 14
+    glyph: {fileID: 21300000, guid: 216411afae8a14fda972d089a4369962, type: 3}
+    glyphPos: {fileID: 21300000, guid: 216411afae8a14fda972d089a4369962, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 216411afae8a14fda972d089a4369962, type: 3}
+  - buttonName: Right Stick Button
+    elementIdentifierId: 15
+    glyph: {fileID: 21300000, guid: 437f9f7bb99b54374be3301cd3fb61a5, type: 3}
+    glyphPos: {fileID: 21300000, guid: 437f9f7bb99b54374be3301cd3fb61a5, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 437f9f7bb99b54374be3301cd3fb61a5, type: 3}
+  - buttonName: D-Pad Up
+    elementIdentifierId: 16
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: D-Pad Right
+    elementIdentifierId: 17
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: D-Pad Down
+    elementIdentifierId: 18
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: D-Pad Left
+    elementIdentifierId: 19
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: Left Stick
+    elementIdentifierId: 20
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: Right Stick
+    elementIdentifierId: 21
+    glyph: {fileID: 0}
+    glyphPos: {fileID: 0}
+    glyphNeg: {fileID: 0}
+  - buttonName: Guide
+    elementIdentifierId: 22
+    glyph: {fileID: 21300000, guid: 510ca5502cd2e4c2885d81f3adb21d36, type: 3}
+    glyphPos: {fileID: 21300000, guid: 510ca5502cd2e4c2885d81f3adb21d36, type: 3}
+    glyphNeg: {fileID: 21300000, guid: 510ca5502cd2e4c2885d81f3adb21d36, type: 3}

@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/_DecoyCore/Scenes/SplashScreen.unity
+    guid: d8d1e01e06e0cc54f813d9a473431ab7
+  - enabled: 1
+    path: Assets/_DecoyCore/Scenes/LoadingScreen.unity
+    guid: 9baad6f0243ef1441b081e1483d1ead1
+  - enabled: 1
+    path: Assets/_DecoyCore/Scenes/EngagementScreen.unity
+    guid: 5c669b0b1ae6b9749953238b83bfd0f3
   m_configObjects: {}
