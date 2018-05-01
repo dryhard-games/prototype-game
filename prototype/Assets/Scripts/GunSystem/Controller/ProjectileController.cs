@@ -4,7 +4,7 @@
     using Decoy.Core.Utilities;
     using System.Collections.Generic;
     /// <summary>
-    /// GunController.cs
+    /// ProjectileController.cs
     /// <summary>
     /// Author: Thomas van Opstal
     /// </summary>
@@ -12,7 +12,7 @@
         public ProjectileModel[] projectileModels;
 
         public List<GameObject> projectilePool;
-        private List<GameObject> projectilesInUse;
+        private List<GameObject> projectilesInUse = new List<GameObject>();
 
         private Dictionary<ProjectileTypes, ProjectileModel> projectileLookupDic = new Dictionary<ProjectileTypes, ProjectileModel>();
 
@@ -53,6 +53,11 @@
 
             projectilesInUse.Remove(projectile);
             projectilePool.Add(projectile);
+        }
+
+        private void OnGUI() {
+            if (GUILayout.Button("Fire"))
+                EventManager.TriggerEvent(GunEventTypes.FIRE_PROJECTILE, ProjectileTypes.Bullet, transform.position.ToString("G4"), transform.eulerAngles.ToString("G4"));
         }
     }
 }
