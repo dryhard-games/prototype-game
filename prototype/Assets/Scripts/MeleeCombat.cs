@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class MeleeCombat : MonoBehaviour
 {
-	[SerializeField] private ColliderMarker[] _markers;
+    [SerializeField] private ColliderMarker[] _markers;
 
     private Animator _anim;
     private bool _isPlaying;
     private List<GameObject> _oldTargets = new List<GameObject>();
+
+    private int _counter;
 
 	private void Awake()
 	{
@@ -21,6 +23,7 @@ public class MeleeCombat : MonoBehaviour
         {
             _oldTargets.Clear();
             ResetMarkers();
+
             _isPlaying = true;
         }
         else
@@ -41,16 +44,26 @@ public class MeleeCombat : MonoBehaviour
     {
         if (!_oldTargets.Contains(obj))
         {
-            Debug.Log("HITTING " + obj);
+            if (_counter == 2)
+            {
+                obj.GetComponentInParent<Animator>().SetTrigger("BattleCry");
+            }
+            else
+            {
+                obj.GetComponentInParent<Animator>().SetTrigger("TakeHit");
+            }
+
+			Debug.Log("call iHittable: " + obj.GetComponentInParent<Rigidbody>().name + "'s " + obj.name);
             _oldTargets.Add(obj);
+			_counter++;
         }
     }
 
 	private void Update()
 	{
-		_anim.SetTrigger("MeleeAttack");
         if (Input.GetKeyDown(KeyCode.F))
         {
+			_anim.SetTrigger("MeleeAttack");
         }
 
         if (!_isPlaying)
