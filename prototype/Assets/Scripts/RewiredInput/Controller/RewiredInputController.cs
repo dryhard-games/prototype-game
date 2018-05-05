@@ -40,6 +40,10 @@
             model.jumpButtonUp = rewiredPlayer.GetButtonUp(ACTIONS.Jump.ToString());
             model.jumpButtonHold = rewiredPlayer.GetButton(ACTIONS.Jump.ToString());
 
+            model.interactButtonDown = rewiredPlayer.GetButtonDown(ACTIONS.Interact.ToString());
+            model.interactButtonUp = rewiredPlayer.GetButtonUp(ACTIONS.Interact.ToString());
+            model.interactButtonHold = rewiredPlayer.GetButton(ACTIONS.Interact.ToString());
+
             model.verticalLookAxis = rewiredPlayer.GetAxis(ACTIONS.VerticalLook.ToString());
             model.verticalLookAxisRaw = rewiredPlayer.GetAxisRaw(ACTIONS.VerticalLook.ToString());
 

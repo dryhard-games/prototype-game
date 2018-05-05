@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Projectile
   m_EditorClassIdentifier: 
   type: 0
-  speed: 10
+  speed: 100
   damage: 100
   lifeTime: 2

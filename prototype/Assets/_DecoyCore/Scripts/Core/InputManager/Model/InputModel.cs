@@ -29,14 +29,17 @@
         public bool sprintButtonUp;
         public bool crouchButtonUp;
         public bool jumpButtonUp;
+        public bool interactButtonUp;
         [Header("Button Down")]
         public bool sprintButtonDown;
         public bool crouchButtonDown;
         public bool jumpButtonDown;
+        public bool interactButtonDown;
         [Header("Button Hold")]
         public bool sprintButtonHold;
         public bool crouchButtonHold;
         public bool jumpButtonHold;
+        public bool interactButtonHold;
 
         [Header("General Button")]
         public bool anyButtonDown;
