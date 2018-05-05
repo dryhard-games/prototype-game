@@ -54,10 +54,5 @@
             projectilesInUse.Remove(projectile);
             projectilePool.Add(projectile);
         }
-
-        private void OnGUI() {
-            if (GUILayout.Button("Fire"))
-                EventManager.TriggerEvent(GunEventTypes.FIRE_PROJECTILE, ProjectileTypes.Bullet, transform.position.ToString("G4"), transform.eulerAngles.ToString("G4"));
-        }
     }
 }
