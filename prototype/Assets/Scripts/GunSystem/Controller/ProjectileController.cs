@@ -42,8 +42,10 @@
             projectile.transform.SetPositionAndRotation(position, Quaternion.Euler(rotation));
 
             //Make a new copy and fill it with requested type
-            ProjectileModel tModel = new ProjectileModel();
-            tModel = projectileLookupDic[type];
+            ProjectileModel tModel = (ProjectileModel)ScriptableObject.CreateInstance(typeof(ProjectileModel));
+            tModel.damage = projectileLookupDic[type].damage;
+            tModel.lifeTime = projectileLookupDic[type].lifeTime;
+            tModel.speed = projectileLookupDic[type].speed;
 
             projectile.GetComponent<ProjectileView>().Model = tModel;
         }
