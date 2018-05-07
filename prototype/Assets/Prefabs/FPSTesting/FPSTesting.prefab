@@ -1781,7 +1781,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1141775055587010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.604, z: -0.157}
+  m_LocalPosition: {x: 0.018, y: -1.674, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4657939749018672}
@@ -3312,7 +3312,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1096948721386878}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -3344,7 +3344,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -3412,7 +3412,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1802999265368328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -3444,7 +3444,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -3512,7 +3512,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1383202993656788}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -3544,7 +3544,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -3612,7 +3612,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1536192555763910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -3644,7 +3644,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -3712,7 +3712,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1099828761917738}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -3744,7 +3744,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -3812,7 +3812,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1968597327604964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -3844,7 +3844,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -3912,7 +3912,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367327858452160}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -3944,7 +3944,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -4012,7 +4012,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1005005754597886}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -4044,7 +4044,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -4112,7 +4112,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1126263580629996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -4144,7 +4144,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -4212,7 +4212,7 @@ TrailRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1075431038121356}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -4244,7 +4244,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.01
+    widthMultiplier: 0.03
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -4319,6 +4319,8 @@ MonoBehaviour:
   rBody: {fileID: 54605627245448986}
   sphereCollider: {fileID: 135222012395840782}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114138243662815680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4333,6 +4335,8 @@ MonoBehaviour:
   rBody: {fileID: 54231588989147048}
   sphereCollider: {fileID: 135485965926650986}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114152394467611128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4389,6 +4393,8 @@ MonoBehaviour:
   rBody: {fileID: 54252703257088186}
   sphereCollider: {fileID: 135354153484853458}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114285831605980982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4481,6 +4487,8 @@ MonoBehaviour:
   rBody: {fileID: 54722038118572098}
   sphereCollider: {fileID: 135968120101520764}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114566446068060712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4495,6 +4503,8 @@ MonoBehaviour:
   rBody: {fileID: 54698601956946760}
   sphereCollider: {fileID: 135338827235066066}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114590074463102512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4509,6 +4519,8 @@ MonoBehaviour:
   rBody: {fileID: 54827731134299656}
   sphereCollider: {fileID: 135170056717335682}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114612903540688524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4523,6 +4535,8 @@ MonoBehaviour:
   rBody: {fileID: 54064460167348106}
   sphereCollider: {fileID: 135547582221092680}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114622247108207050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4537,6 +4551,8 @@ MonoBehaviour:
   rBody: {fileID: 54080839090846482}
   sphereCollider: {fileID: 135004308875146632}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114636661472046732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4551,6 +4567,8 @@ MonoBehaviour:
   rBody: {fileID: 54557272696925524}
   sphereCollider: {fileID: 135773912479641616}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!114 &114665865314640044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4583,7 +4601,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: O
 --- !u!114 &114671665248197150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4597,6 +4615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponMuzzle: {fileID: 4749497439451244}
   inputModel: {fileID: 11400000, guid: 447281cbd6632644e8bc48aa2188f1bb, type: 2}
+  playerViewport: {fileID: 20175594963899516}
 --- !u!114 &114738828218596372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4611,6 +4630,8 @@ MonoBehaviour:
   rBody: {fileID: 54390089596971298}
   sphereCollider: {fileID: 135518190556136922}
   skinWidth: 0.1
+  tRenderer: {fileID: 0}
+  frameCount: 3
 --- !u!124 &124869880597027730
 Behaviour:
   m_ObjectHideFlags: 1
