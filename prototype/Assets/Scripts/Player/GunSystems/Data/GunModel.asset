@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: GunModel
   m_EditorClassIdentifier: 
   gunType: 0
-  magazineSize: 5
+  magazineSize: 10
   magazineCount: 5
   bulletType: 0
-  rateOfFire: 0.25
+  rateOfFire: 0.15
   spreadRange: 0
-  reloadSpeed: 3
+  reloadSpeed: 0.1

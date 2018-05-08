@@ -14,6 +14,7 @@
         public GunModel gModel;
         public Camera playerCamera;
         public Transform muzzleExit;
+        public GameObject muzzleFlash;
 
         private bool isReloading;
         private float lastShot;
@@ -54,10 +55,19 @@
             if (Time.time > gModel.rateOfFire + lastShot) {
                 roundsLeft--;
 
+                StartCoroutine(DrawMuzzleFlash());
+
                 EventManager.TriggerEvent(GunEventTypes.FIRE_PROJECTILE, gModel.bulletType, muzzleExit.position.ToString("G4"), muzzleExit.eulerAngles.ToString("G4"));
 
                 lastShot = Time.time;
             }
+        }
+
+        private IEnumerator DrawMuzzleFlash() {
+            muzzleFlash.SetActive(true);
+            yield return null;
+            yield return null;
+            muzzleFlash.SetActive(false);
         }
 
         private void AimAtCenter() {

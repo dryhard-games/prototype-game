@@ -18,6 +18,9 @@
         public TrailRenderer tRenderer;
         public int frameCount;
 
+        [Header("Impact")]
+        public GameObject bulletImpact;
+
         private int layer;
         private RaycastHit hitInfo;
 
@@ -109,6 +112,8 @@
         }
 
         private void ObstacleDetected() {
+            Instantiate(bulletImpact, hitInfo.point, Quaternion.identity);
+
             tRenderer.enabled = false;
             sphereCollider.enabled = false;
             rBody.velocity = Vector3.zero;
