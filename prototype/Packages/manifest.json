@@ -1,4 +1,8 @@
 {
-	"dependencies": {
-	}
+  "dependencies": {
+    "com.unity.render-pipelines.high-definition": "1.1.5-preview",
+    "com.unity.render-pipelines.core": "1.1.5-preview",
+    "com.unity.postprocessing": "2.0.5-preview",
+    "com.unity.ads": "2.0.8"
+  }
 }
