@@ -4,6 +4,7 @@
     using Decoy.Core.EventSystem;
     using System.Collections;
     using Dryhard.GunSystem;
+    using UnityEngine.UI;
     /// <summary>
     /// PlayerGunController.cs
     /// <summary>
@@ -13,6 +14,7 @@
         public InputModel iModel;
         public GunModel gModel;
         public Camera playerCamera;
+        public Text ammoCounter;
 
         private bool isReloading;
         private float lastShot;
@@ -28,6 +30,8 @@
         }
 
         private void Update() {
+            ammoCounter.text = (isReloading) ? "Reloading" : roundsLeft + "/" + gModel.magazineSize;
+
             if (isReloading)
                 return;
 
