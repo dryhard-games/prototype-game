@@ -16,5 +16,10 @@
         /// Arguments - 1.(GameObject)projectile
         /// </summary>
         public const string RETURN_PROJECTILE = PREFIX + "RETURN_PROJECTILE";
+
+        /// <summary>
+        /// Arguments - 1.(GameObject)impact
+        /// </summary>
+        public const string RETURN_AND_REMOVE_IMPACT = PREFIX + "RETURN_AND_REMOVE_IMPACT";
     }
 }

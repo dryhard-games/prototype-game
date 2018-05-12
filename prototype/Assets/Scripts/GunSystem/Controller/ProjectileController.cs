@@ -14,11 +14,15 @@
         public List<GameObject> projectilePool;
         private List<GameObject> projectilesInUse = new List<GameObject>();
 
+        public List<GameObject> impactPool;
+        private List<GameObject> impactPoolInUse = new List<GameObject>();
+
         private Dictionary<ProjectileTypes, ProjectileModel> projectileLookupDic = new Dictionary<ProjectileTypes, ProjectileModel>();
 
         private void Start() {
             EventManager.StartListening(GunEventTypes.FIRE_PROJECTILE, FireProjectile);
             EventManager.StartListening(GunEventTypes.RETURN_PROJECTILE, ReturnProjectile);
+            EventManager.StartListening(GunEventTypes.RETURN_AND_REMOVE_IMPACT, RemoveAndReturnImpact);
 
             foreach (ProjectileModel model in projectileModels)
                 projectileLookupDic.Add(model.type, model);
@@ -27,6 +31,7 @@
         private void OnDestroy() {
             EventManager.StopListening(GunEventTypes.FIRE_PROJECTILE, FireProjectile);
             EventManager.StopListening(GunEventTypes.RETURN_PROJECTILE, ReturnProjectile);
+            EventManager.StopListening(GunEventTypes.RETURN_AND_REMOVE_IMPACT, RemoveAndReturnImpact);
         }
 
         private void FireProjectile(object[] data) {
@@ -55,6 +60,29 @@
 
             projectilesInUse.Remove(projectile);
             projectilePool.Add(projectile);
+
+            DrawImpact((RaycastHit)data[1]);
+        }
+
+        private void DrawImpact(RaycastHit impactPoint) {
+            if (!impactPoint.transform)
+                return;
+
+            impactPool[0].transform.SetPositionAndRotation(impactPoint.point, Quaternion.identity);
+            impactPool[0].transform.forward = impactPoint.normal;
+            impactPool[0].SetActive(true);
+
+            impactPoolInUse.Add(impactPool[0]);
+            impactPool.RemoveAt(0);
+        }
+
+        private void RemoveAndReturnImpact(object[] data) {
+            GameObject impact = (GameObject)data[0];
+
+            impactPoolInUse.Remove(impact);
+            impactPool.Add(impact);
+
+            impact.SetActive(false);
         }
     }
 }

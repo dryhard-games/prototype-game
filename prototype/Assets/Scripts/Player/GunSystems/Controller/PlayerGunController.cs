@@ -13,8 +13,6 @@
         public InputModel iModel;
         public GunModel gModel;
         public Camera playerCamera;
-        public Transform muzzleExit;
-        public GameObject muzzleFlash;
 
         private bool isReloading;
         private float lastShot;
@@ -32,8 +30,6 @@
         private void Update() {
             if (isReloading)
                 return;
-
-            AimAtCenter();
 
             if (roundsLeft <= 0) {
                 StartCoroutine(Reload());
@@ -55,30 +51,10 @@
             if (Time.time > gModel.rateOfFire + lastShot) {
                 roundsLeft--;
 
-                StartCoroutine(DrawMuzzleFlash());
-
-                EventManager.TriggerEvent(GunEventTypes.FIRE_PROJECTILE, gModel.bulletType, muzzleExit.position.ToString("G4"), muzzleExit.eulerAngles.ToString("G4"));
+                EventManager.TriggerEvent(GunEventTypes.FIRE_PROJECTILE, gModel.bulletType, playerCamera.transform.position.ToString("G4"), playerCamera.transform.eulerAngles.ToString("G4"));
 
                 lastShot = Time.time;
             }
-        }
-
-        private IEnumerator DrawMuzzleFlash() {
-            muzzleFlash.SetActive(true);
-            yield return null;
-            yield return null;
-            muzzleFlash.SetActive(false);
-        }
-
-        private void AimAtCenter() {
-            float screenX = Screen.width / 2;
-            float screenY = Screen.height / 2;
-
-            RaycastHit hit;
-            Ray ray = playerCamera.ScreenPointToRay(new Vector3(screenX, screenY));
-
-            if (Physics.Raycast(ray, out hit))
-                muzzleExit.LookAt(hit.point);
         }
 
         private void SwitchWeapon(object[] data) {

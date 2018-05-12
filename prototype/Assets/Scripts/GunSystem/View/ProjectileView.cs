@@ -14,13 +14,6 @@
         public Collider sphereCollider;
         public float skinWidth = 0.1f;
 
-        [Header("TrailRenderer")]
-        public TrailRenderer tRenderer;
-        public int frameCount;
-
-        [Header("Impact")]
-        public GameObject bulletImpact;
-
         private int layer;
         private RaycastHit hitInfo;
 
@@ -35,13 +28,8 @@
         public ProjectileModel Model {
             get { return model; }
             set { model = value;
-                tRenderer.enabled = false;
                 InitProjectile();
             }
-        }
-
-        private void OnEnable() {
-            tRenderer = GetComponent<TrailRenderer>();
         }
 
         private void OnDisable() {
@@ -77,15 +65,6 @@
                     ObstacleDetected();
                 }
             }
-
-            StartCoroutine(EnableTrailRenderer());
-        }
-
-        private IEnumerator EnableTrailRenderer() {
-            for(int i = 0; i < frameCount; i++)
-                yield return null;
-
-            tRenderer.enabled = true;
         }
 
         private void Update() {
@@ -112,9 +91,6 @@
         }
 
         private void ObstacleDetected() {
-            Instantiate(bulletImpact, hitInfo.point, Quaternion.identity);
-
-            tRenderer.enabled = false;
             sphereCollider.enabled = false;
             rBody.velocity = Vector3.zero;
             rBody.angularVelocity = Vector3.zero;
